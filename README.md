@@ -44,8 +44,9 @@ venv\Scripts\activate
 
 # 2. Install dependencies
 pip install -r requirements.txt
+```
 
-# 3. Create environment configuration
+### Environment Configuration
 
 Copy `.env.example` to `.env` and update the values:
 
@@ -65,13 +66,14 @@ Environment variables:
 - DB_HOST: Database host
 - DB_PORT: Database port
 
-# 4. Run database migrations
+```bash
+# 3. Run database migrations
 python manage.py migrate
 
-# 5. Start the development server
+# 4. Start the development server
 python manage.py runserver
-
 ```
+
 
 ### Notes
 
