@@ -45,11 +45,32 @@ venv\Scripts\activate
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Run database migrations
+# 3. Create environment configuration
+
+Copy `.env.example` to `.env` and update the values:
+
+```env
+DB_NAME=postgres
+DB_USER=postgres
+DB_PASSWORD=your_password
+DB_HOST=localhost
+DB_PORT=5432
+```
+
+Environment variables:
+
+- DB_NAME: PostgreSQL database name
+- DB_USER: PostgreSQL username
+- DB_PASSWORD: PostgreSQL password
+- DB_HOST: Database host
+- DB_PORT: Database port
+
+# 4. Run database migrations
 python manage.py migrate
 
-# 4. Start the development server
+# 5. Start the development server
 python manage.py runserver
+
 ```
 
 ### Notes
